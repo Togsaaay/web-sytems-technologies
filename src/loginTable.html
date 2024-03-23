@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Table</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="h-screen w-screen bg-gray-300 flex p-5 gap-3 bg-no-repeat">
+        <div class="h-[70%] w-[23%] shadow-md shadow-gray-500 rounded-lg bg-gray-200 flex flex-col p-5 gap-2">
+            <h1 class="text-center text-2xl font-bold">Create Account</h1>
+            <label class="text-lg font-semibold font-sans">Name</label>
+            <input class="py-2 pl-4 outline-none rounded-xl" type="text" placeholder="Janith" />
+            <label class="text-lg font-semibold font-sans">Email</label>
+            <input class="py-2 pl-4 outline-none rounded-xl" type="text" placeholder="Janith" />
+            <label class="text-lg font-semibold font-sans">Role</label>
+            <select class="py-2 pl-4 outline-none rounded-xl" name="Role" id="roles">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+            <button class="bg-blue-700 py-2 rounded-xl mt-4 text-lg font-bold font-sans text-white hover:bg-blue-500" type="submit">
+                Create Account
+            </button>
+        </div>
+        <div class="h-[70%] w-[77%] shadow-md shadow-gray-500 rounded-lg bg-gray-200 bg p-5 gap-1">
+            <h1 class="text-2xl font-bold">User List</h1>
+            <table class="w-[100%] border-2 border-black">
+                <thead>
+                    <tr>
+                        <th class="border border-black w-[10%]">ID</th>
+                        <th class="border border-black w-[30%]">Name</th>
+                        <th class="border border-black w-[30%]">Email</th>
+                        <th class="border border-black w-[10%]">Role</th>
+                        <th class="border border-black w-[20%]">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="border border-black">1</td>
+                        <td class="border border-black">Ronalyn Anne Padilla</td>
+                        <td class="border border-black">ronalyn.padilla@gmail.com</td>
+                        <td class="border border-black">Admin</td>
+                        <td class="border border-black">
+                            <button class="bg-blue-500 text-white p-1"><i class="fas fa-edit"></i></button>
+                            <button class="bg-red-500 text-white p-1"><i class="fas fa-trash-alt"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border border-black">2</td>
+                        <td class="border border-black">Ronalyn Test</td>
+                        <td class="border border-black">ronalyn.text@gmail.com</td>
+                        <td class="border border-black">User</td>
+                        <td class="border border-black"><button class="bg-blue-500 text-white p-1"><i class="fas fa-edit"></i></button>
+                            <button class="bg-red-500 text-white p-1"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

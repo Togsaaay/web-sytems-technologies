@@ -1,1 +1,0 @@
-# web-sytems-technologies
